@@ -1,0 +1,143 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 30%;
+    height: 40%;
+    background-color: #074D8C;
+    border-radius: 2%;
+}
+#Container{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+#div_resultado{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#div_contador{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*#resultado_contador_txt{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}*/
+#resultado_txt, #contador_txt{
+    font-size: 40px;
+    color: #fff;
+    margin: 0;
+    padding:  10% 0 8% 0;
+    
+}
+#resultado, #contador{
+    font-size: 80px;
+    color: #fff;
+    margin: 0;
+}
+
+#botao{
+width: 100%;
+height: 50%;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    margin-top: 10%;
+    background-color: #089674;
+    color: #fff;
+    border: 0;
+    border-radius: 5%;
+    font-size: 15px;
+}
+
+/* RESPONSIVIDADE */
+
+@media only screen and (max-width: 1007px){
+    main{
+        width: 50%;
+    }
+    #resultado_contador{
+
+        flex-wrap: wrap;
+    }
+    #botao{
+        flex-wrap: wrap;
+    }
+
+}
+@media only screen and (max-width: 820px){
+    main{
+        width: 70%;
+    }
+    #resultado_contador{
+
+        flex-wrap: wrap;
+    }
+    #botao{
+        flex-wrap: wrap;
+    }
+
+}
+@media only screen and (max-width: 640px){
+    main{
+        width: 80%;
+    }
+    #resultado_contador{
+
+        flex-wrap: wrap;
+    }
+    #botao{
+        flex-wrap: wrap;
+    }
+
+}
+@media only screen and (max-width: 415px){
+
+    main{
+        width: 95%;
+    }
+    #resultado, #contador{
+        font-size: 30px;
+    }
+    #resultado_txt, #contador_txt{
+        font-size: 30px;
+    }
+    button{
+        width: 75px;
+        height: 50px;
+        font-size: 11px;
+    }
+
+}
